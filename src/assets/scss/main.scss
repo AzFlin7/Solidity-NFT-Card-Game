@@ -1,0 +1,91 @@
+// Import Bulma's core
+@import '~bulma/sass/utilities/_all';
+
+// Set your colors
+$primary: #6c67d9;
+$primary-invert: findColorInvert($primary);
+$dark: #221f1f;
+$dark-invert: findColorInvert($dark);
+$twitter: #4099ff;
+$twitter-invert: findColorInvert($twitter);
+$info: #535353;
+$info-invert: findColorInvert($info);
+$table-background-color: #2c2c2c;
+$table-color: rgb(212, 212, 212);
+$table-row-hover-background-color: $info;
+$menu-item-hover-background-color: lighten($info, 20);
+
+$app-padding: 24px 80px;
+
+$colors: (
+  'white': (
+    $white,
+    $black,
+  ),
+  'black': (
+    $black,
+    $white,
+  ),
+  'light': (
+    $light,
+    $light-invert,
+  ),
+  'dark': (
+    $dark,
+    $dark-invert,
+  ),
+  'primary': (
+    $primary,
+    $primary-invert,
+  ),
+  'info': (
+    $info,
+    $info-invert,
+  ),
+  'success': (
+    $success,
+    $success-invert,
+  ),
+  'warning': (
+    $warning,
+    $warning-invert,
+  ),
+  'danger': (
+    $danger,
+    $danger-invert,
+  ),
+  'twitter': (
+    $twitter,
+    $twitter-invert,
+  ),
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+@font-face {
+  font-family: Duplet Rounded;
+  src: url(../font/Duplet_Rounded/DupletRounded-Regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Duplet Rounded;
+  src: url(../font/Duplet_Rounded/DupletRounded-Bold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Duplet Rounded;
+  src: url(../font/Duplet_Rounded/DupletRounded-Extrabold.otf);
+  font-weight: 700;
+}
+
+* {
+  font-family: 'Duplet Rounded';
+}
+// Import Bulma and Buefy styles
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
